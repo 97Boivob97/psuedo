@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo</title>
+    <style>
+        a.my-link:hover{
+            color:green;
+        }
+        input:hover{
+            background-color: red;
+        }
+        input:focus{
+            background-color: black;
+        }
+        table{
+            width:200px;
+            height:200px;
+        }
+        td,tr{
+            text-align: center;
+        }
+        table,tr,td,th{
+            border:2px solid black;
+
+        }
+        tr:nth-child(odd){
+            background-color: grey;
+        }
+        tr:nth-child(even){
+            background-color: pink;
+        }
+        p.p1:hover{
+            background-color: brown;
+        }
+        p.p1::first-line{
+            font-size:50px;
+
+        }
+        p.p1::after{
+            content: ".";
+        }
+        .demo:hover{
+            background-color: black;
+            color:white
+        }
+        div p:nth-child(odd){
+            color:red;
+        }
+        ul li:nth-child(odd){
+            color:cyan;
+        }
+        ul li:nth-child(even){
+            color:pink;
+        }
+        .span1{
+            color:blue;
+        }
+        h1::first-letter{
+            color:yellow;
+            font-size:50px;
+        }
+       h1::before{
+        content: "*";
+       }
+       h1::selection{
+        color:red;
+        background-color:green;
+       }
+    </style>
+</head>
+<body>
+    <a class="my-link" href="#">Tutorial</a>
+    <a href="#">Home</a>
+    <br> <br>
+    <input type="text" placeholder="Enter Name:">
+    <br> <br>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Fahad</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>Nikita</td>
+            <td>24</td>
+        </tr>
+    </table>
+    <p class="p1">Fahad Bin Kashem</p>
+    <br>
+    <div class="demo">
+        <p> <span class="span1">A</span>ustralia</p>
+        <p>Bangladesh</p>
+        <p>South Africa</p>
+    </div>
+    <ul type="square">
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+        <li>List4</li>
+        <li>List5</li>
+        
+    </ul>
+    <h1>I love sports</h1>
+    <h1>I love food</h1>
+</body>
+</html>
